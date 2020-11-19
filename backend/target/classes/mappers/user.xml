@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.gg.dao.UserDAO">
+
+   	<!-- User 전체 조회 -->
+   	<select id="selectAllUser" resultType="user">
+    	select * 
+     	from user_info
+   	</select>
+   
+   	<!-- User 상세 조회 -->
+	<select id="selectUserByTypeAndAuth" resultType="user" parameterType="hashmap">
+		select *
+      	from user_info 
+		where user_type = #{user_type} and user_auth = #{user_auth}
+	</select>
+	
+	<!-- User 상세 조회 -->
+	<select id="selectUserByNickname" resultType="user" parameterType="string">
+		select *
+      	from user_info 
+		where user_nickname = #{user_nickname}
+	</select>
+
+	<!-- User 등록 -->
+	<insert id="insertUser" parameterType="user">
+		insert into user_info
+		(user_type, user_auth, user_nickname, user_match, user_score , user_token , user_report) 
+		values
+		(#{user_type}, #{user_auth}, #{user_nickname} , #{user_match}, #{user_score} , #{user_token} , #{user_report})
+	</insert>
+	
+	<!-- User 수정 -->
+	<update id="updateUser" parameterType="user">
+		update 	user_info 
+		set 	user_nickname = #{user_nickname},
+		   	   	user_match = #{user_match},
+		   	   	user_score = #{user_score},
+		   	   	user_token = #{user_token},
+		   	   	user_report = #{user_report}
+		where user_type = #{user_type} and user_auth = #{user_auth}
+	</update>
+
+	<!-- User 삭제 -->
+	<delete id="deleteUserByTypeAndAuth" parameterType="hashmap">
+		delete 
+		from	user_info
+		where 	user_type= #{user_type} and user_auth = #{user_auth}
+	</delete>
+   
+</mapper>

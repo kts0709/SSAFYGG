@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.gg.dao.CardDAO">
+
+   	<!-- Card 전체 조회 -->
+   	<select id="selectAllCard" resultType="card">
+    	select * 
+     	from card_info
+     	where card_active = true
+     	order by card_no desc
+   	</select>
+   
+   	<!-- Card 상세 조회 -->
+	<select id="selectCardByNo" resultType="card" parameterType="int">
+		select *
+      	from card_info 
+		where card_no = #{card_no}
+	</select>
+
+	<!-- Card 등록 -->
+	<insert id="insertCard" parameterType="card">
+		insert into card_info
+		(card_type,card_recruit_max,card_recruit_now,card_host,card_guest,card_active,card_tier_start,
+		 card_tier_end,card_position,card_message,card_create_time,card_matching_time,card_hashtag,card_host_rank)  
+		values
+		(#{card_type},#{card_recruit_max},#{card_recruit_now},#{card_host},#{card_guest},#{card_active},#{card_tier_start},#{card_tier_end},
+		 #{card_position},#{card_message},#{card_create_time},#{card_matching_time},#{card_hashtag},#{card_host_rank})
+	</insert>
+	
+	<!-- Card 수정 -->
+	<update id="updateCard" parameterType="card">
+		update 	card_info 
+		set 	card_type = #{card_type},
+		   	   	card_recruit_max = #{card_recruit_max},
+		   	   	card_recruit_now = #{card_recruit_now},
+		   	   	card_host = #{card_host},
+		   	   	card_guest = #{card_guest},
+		   	   	card_active = #{card_active},
+		   	   	card_tier_start = #{card_tier_start},
+		   	   	card_tier_end = #{card_tier_end},
+		   	   	card_position = #{card_position},
+		   	   	card_message = #{card_message},
+		   	   	card_create_time = #{card_create_time},
+		   	   	card_matching_time = #{card_matching_time},
+		   	   	card_hashtag = #{card_hashtag},
+		   	   	card_host_rank = #{card_host_rank}
+		where card_no = #{card_no}
+	</update>
+
+	<!-- User 삭제 -->
+	<delete id="deleteUserByNo" parameterType="int">
+		delete 
+		from	card_info
+		where 	card_no = #{card_no}
+	</delete>
+   
+</mapper>

@@ -1,0 +1,35 @@
+yarn install
+yarn serve
+
+Frontend 개발환경
+1)NPM사용을 위한 Node.js(자바스크립트 런타임 엔진) 설치
+-https://nodejs.org/en/
+-LTS설치 권장
+-node -v, npm-v 로 설치확인
+
+2)Yarn설치
+Node.js를 설치하면 기본적으로  npm이 설치되지만 빌드속도가 빠른 yarn 사용
+-https://classic.yarnpkg.com/en/docs/install#windows-stable
+-원도우 버전 다운로드
+-yarn -v로 설치 확인
+
+3)Vue.js, Vue-cli 설치 및 Vue 프로젝트 생성
+Vue프로젝트의 Vue-cli를 이용할 경우 Webpack, Eslin, 개발서버 등의 설정이 자동으로 구성
+-yarn global add @vue/cli
+-위 명령어로 Yarn의 Global 옵션을 통해 전역으로 설치
+-vue create <project-name>
+-위 명령어로 프로젝트 설치 셋팅시 default 선택, Babel,Eslint를 사용
+-yarn serve로 실행
+
+4)Sass 설정
+Webpack에서 Sass를 css로 컴파일하기 위해 아래의 명령어와 같이 node-sass와 sass-loader를 설치합니다.
+-yarn add node-sass sass-loader
+
+5)Vue0router, Vuex설치
+-yarn add vue-router vuex
+
+Backend 개발환경
+1)Spring boot
+2)Mysql
+
+프론트엔드 담당 - 프론트 백엔드 통신, 모바일 디자인, ux/ui 변경
