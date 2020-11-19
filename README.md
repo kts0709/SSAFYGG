@@ -46,9 +46,9 @@ SSAFY 3기 2학기 첫 번째 프로젝트
 
 
 ## 시연 영상
-[![SSAFY_3기_SSAFYGG_시연영상](http://img.youtube.com/vi/ulmYGtK3Cl4/0.jpg)](https://youtu.be/ulmYGtK3Cl4)
+[![SSAFY_3기_SSAFYGG_시연영상](https://i9.ytimg.com/vi/H_dvkbXnOUg/mq1.jpg?sqp=CJTv2P0F&rs=AOn4CLCKxxUBxZolK4rHB0bwJsj5b9Cgbg)](https://youtu.be/H_dvkbXnOUg)
 
 
 ## UCC
-[![SSAFY_3기_SSAFYGG_UCC](https://youtu.be/CzyadaUWfk4)](https://youtu.be/ulmYGtK3Cl4)
+[![SSAFY_3기_SSAFYGG_UCC](https://i9.ytimg.com/vi/CzyadaUWfk4/mq2.jpg?sqp=CJTv2P0F&rs=AOn4CLCgk4ZjN1D1XYBA3BQB7yu5RP8VZA)](https://youtu.be/CzyadaUWfk4)
 
