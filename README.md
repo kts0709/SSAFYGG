@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-    <img src="/uploads/02c797fc6128e263b54a3c915da9464f/로고_1.png"  width="600" height="300">
+    <img src="https://i.ibb.co/Lp7jVfj/logo.png"  width="600" height="300">
 </p>
 
 # SSAFY.GG 
@@ -45,14 +45,10 @@ SSAFY 3기 2학기 첫 번째 프로젝트
 
 
 
-## 실행
-
-https://i3a401.p.ssafy.io/   **(Chrome 접속을 권장합니다.)**
+## 시연 영상
 
 
 
-## 스크린샷
-
-![01](/uploads/c006b61f09f3dacf960f230cc4dbaa13/01.png)
+## UCC
 
 
